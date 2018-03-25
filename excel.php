@@ -1,9 +1,6 @@
 <?php
+function kek(){
 include("bd.php");
-
-$_POST['goal']=2300;
-$_POST['min']=3;
-$_POST['max']=10;
     $LIMIT=10000;
     $prec = (float) 200 + 0.000001;//погрешность
     $goal = $_POST['goal'];//цель поиска
@@ -17,7 +14,6 @@ $_POST['max']=10;
     if ($min_count < 1 ) $min_count = 1; else if ($min_count > $sel_count) $min_count = $sel_count;
     
  //очищение объекта
-
     do
     {
         $AddSum = 0;
@@ -37,7 +33,7 @@ $_POST['max']=10;
             if ($j >= $min_count && $j<= $sel_count) 
                 if (abs($AddSum - $goal) <= $prec)
                 {
-                    echo("<script>alert('Подбор завершен. Необходимая точность достигнута.');</script>");
+                   // echo("<script>alert('Подбор завершен. Необходимая точность достигнута.');</script>");
                     $iter=$LIMIT;
                     break; 
         		}
@@ -45,7 +41,6 @@ $_POST['max']=10;
         $iter = $iter + 1;
     }
    while ($iter <= $LIMIT);
-   	var_dump($arrayID);
-   	echo $AddSum;
-//}
+   	return($arrayID);
+}
 ?>

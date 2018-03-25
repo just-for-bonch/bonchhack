@@ -1,2 +1,1 @@
-# bonchhack
-BonchHackDay
+https://github.com/just-for-bonch/bonchhack

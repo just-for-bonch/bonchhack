@@ -28,11 +28,11 @@
     <div class="content" id="menu">
     	<div class="menu" >
     		<div class="text-block">Расскажи о себе, <br>подсчитай нормы потребления <br> и подбери подходящие блюда</div>
-    		<div class="menu-img"><a href=""><img src="img/menu.png" alt=""></a></div>
+    		<div class="menu-img"><a href="menu.php"><img src="img/menu.png" alt=""></a></div>
     	</div>
 
     	<div class="search">
-    		<div class="search-img"><a href=""><img src="img/search.png" alt=""></a></div>
+    		<div class="search-img"><a href="search.php"><img src="img/search.png" alt=""></a></div>
     		<div class="search-block">Найдите продукты или блюда <br>по желаемым параметрам</div>
     	</div>
     <div class="footer">
